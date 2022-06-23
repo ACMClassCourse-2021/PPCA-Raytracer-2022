@@ -13,25 +13,34 @@
 
 ## 导言
 
-　　本项目主要工作为使用 Rust 语言实现一个基于路径追踪算法的光线追踪图像渲染器。以这个形式，你能通过学习一门新的（而且漂亮的）语言—— Rust 来加深对编程语言设计、编译原理的理解，同时又能趣味性地了解 Computer Graphics 的基础工作。项目设有作品互评环节。使用自己手写的渲染器，发挥艺术才能，创造出惊艳全场的超现实大作吧！
+本项目主要工作为使用 Rust 语言实现一个基于路径追踪算法的光线追踪图像渲染器。以这个形式，你能通过学习一门新的（而且漂亮的）语言—— Rust 来加深对编程语言设计、编译原理的理解，同时又能趣味性地了解 Computer Graphics 的基础工作。项目设有作品互评环节。使用自己手写的渲染器，发挥艺术才能，创造出惊艳全场的超现实大作吧！
 
-　　本项目为 2021-2022 学年暑期小学期课程，ACM 班时间为学期第 3 - 6 周（7.24 - 7.29），工科为第 3 - 4 周。项目助教：[PaperL](https://github.com/PaperL/)、[yichuan](https://github.com/yichuan520030910320)、[Alr_ksim](https://github.com/Alr-ksim)。具体日程安排暂定如下：
+本项目为 2021-2022 学年暑期小学期课程，ACM 班时间为学期第 3 - 6 周（7.4 - 7.29），工科为第 3 - 4 周。项目助教：[PaperL](https://github.com/PaperL/)、[yichuan](https://github.com/yichuan520030910320)、[Alr_ksim](https://github.com/Alr-ksim)。具体日程安排暂定如下（Day 1 = 2022.7.4）：
 
-- **Week 1**
-  - Day 1：介绍项目与前期准备（Task 0）
-  - Day 2：熟悉 Rust 语法（Task 1）
-  - Day 3 - 5：完成教程 Part 1 & 2（Task 2）
-- **Week 2**
-  - Day 6 - 9：学习进阶内容
-  - Day 10：工科结课展示 & Code Review；ACM 班 Bonus 介绍
+### 工科日程
 
-- **Week 3 - 4**
-  - Day 11 - 19：学习完成 Bonus / Presentation
-  - Day 20：ACM 班结课展示 & Code Review
+- **Day 1**：介绍项目与前期准备（Task 0）
+- **Day 2 - 3**：熟悉 Rust 语法（Task 1）
+- **Day 4 - 7**：学习完成教程 book 1 & 2（Task 2）
 
-　　本文档由导言、Tasks、Advanced Features、Reference 四部分组成。下文中 💠 标记表示该条目为进阶内容（advanced）。
+- **Day 8 - 9**：自行设计创作结课作品
+- **Day 10**：结课展示 & Code Review
 
-　　你可以直接点击右上角的 “Use this template” 将这个项目复制到自己的 GitHub Profile 中。接下来，你需要做一些准备工作。
+### ACM 班日程
+
+- **Day 1**：介绍项目与前期准备（Task 0）
+- **Day 2**：熟悉 Rust 语法（Task 1）
+- **Day 3 - 5**：学习完成教程 book 1 & 2（Task 2）
+
+- **Day 6 - 7**：完成 book 3 优化内容（Task 3）
+- **Day 10**：进阶内容介绍
+
+- **Day 11 - 19**：完成自主学习（Task 4）
+- **Day 20**：ACM 班结课展示 & Code Review
+
+本文档由导言、Tasks、Advanced Features、Reference 四部分组成。下文中 💠 标记表示该条目为进阶内容，可自行选做。
+
+你可以直接点击右上角的 “Use this template” 将这个项目复制到自己的 GitHub Profile 中。接下来，你需要做一些准备工作。
 
 ---
 
@@ -67,18 +76,43 @@
 - [ ] [2181. 合并零之间的节点](https://leetcode.cn/problems/merge-nodes-in-between-zeros/)
 - [ ] [94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/)
 
-## Task 2: Basic Ray Tracer
+## Task 2: Shoot the Light
 
 了解完 Rust 语法，就可以开始学习和动手实现 ray tracer 了！[***Ray Tracing in One Weekend - The Book Series***](https://raytracing.github.io) 是一套十分经典的教程，从原理和实践角度详细地阐释了 ray tracing 的基础知识，本项目便是基于该教程展开：
 
 - [ ] 学习 Ray Tracing book 1，使用 Rust 语言实现该部分程序，并渲染成果图
+- [ ] 完成 Ray Tracing book 2，要求同上
 - [ ] code review
-  - book 1 相关细节
-  - Rust特性掌握（简易，不超出 Task1 要求的基础内容章节）
+  - Rust 基础语法特性掌握（不会超出 Task1 要求的基础内容章节）
+  - book 1 & 2 最终成果图
+  - book 1 & 2 相关实现细节
 
+## Task 3: Faster than Light
 
+通过 book 1 & 2 的学习，你已经实现了一个基于路径追踪算法的光线追踪渲染器，这个渲染器的逻辑十分简单而显然。接下来，你将接触到真正的光线追踪知识，学习一个十分基础而重要的算法——蒙特卡洛算法。在 book 3 中详细阐述了蒙特卡洛算法以及它在我们的渲染器中的应用。
 
-// todo
+- [ ] 完成 Ray Tracing book 3
+- [ ] code review
+  - book 3 最终成果图
+  - 理解蒙特卡洛算法及相关概念
+  - 💠尝试找出教程中的问题（错误），并在自己代码中加以解决或改进
+
+## Task 4: Out of Light💠
+
+通过 *Ray Tracing in One Weekend* 教程的学习，你已经基本掌握了路径追踪算法。正如 book 3 书名 *The Rest of Your Life*，光线追踪和 CG 是一片无垠的知识领域，投入一生的时间或许也无法学尽。本项目剩余的时间便交由你来自由探索，有几个大致方向可以选择：
+
+- 更抽象的语言特性
+  - 多线程
+  - 静态 BVHNode
+- 更炫酷的视觉效果
+
+- 更高效的渲染算法
+  - 光子贴图
+  - Unity Shader
+- 更真实的 CG 模型
+  - 色彩空间
+
+最终成果形式不限，可以是一张图、一份实验报告或一场展示。请与助教交流你想学习的知识，我们会尽可能地给予支持。
 
 ---
 

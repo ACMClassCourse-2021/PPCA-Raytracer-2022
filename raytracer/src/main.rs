@@ -20,8 +20,15 @@ fn main() {
         style(quality.to_string()).yellow(),
     );
 
-    let mut img: RgbImage = ImageBuffer::new(width, height); // Create image data
-    let progress = ProgressBar::new((height * width) as u64); // Progress bar UI powered by library `indicatif`
+    // Create image data
+    let mut img: RgbImage = ImageBuffer::new(width, height);
+    // Progress bar UI powered by library `indicatif`
+    // Get environment variable CI, which is true for GitHub Action
+    let progress = if option_env!("CI").unwrap_or_default() == "true" {
+        ProgressBar::hidden()
+    } else {
+        ProgressBar::new((height * width) as u64)
+    };
     progress.set_style(ProgressStyle::default_bar()
         .template("{spinner:.green} [{elapsed_precise}] [{wide_bar:.cyan/blue}] [{pos}/{len}] ({eta})")
         .progress_chars("#>-"));
