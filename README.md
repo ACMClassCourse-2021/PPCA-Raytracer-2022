@@ -7,40 +7,67 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/ACMClassCourse-2021/PPCA-Raytracer-2022)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ACMClassCourse-2021/PPCA-Raytracer-2022/CI)
 
-> Powered by Pseudo Photograph Company of ACM
->
-> ACM 伪摄影公司，简称 PPCA，于 2021 年成立😉
+## 课程介绍
+
+- 本项目为 2021-2022 学年暑期小学期课程
+- ACM 班时间为学期第 3 - 6 周（7.4 - 7.29），工科为第 3 - 4 周
+- 项目助教：[PaperL](https://github.com/PaperL/)、[yichuan](https://github.com/yichuan520030910320)、[Alr_ksim](https://github.com/Alr-ksim)
+
+具体安排暂定如下（Day 1 = July 4th, 2022）：
+
+### 工科
+
+- **日程**
+
+  - **Day 1**：介绍项目与前期准备（Task 0）
+  - **Day 2 - 3**：熟悉 Rust 语法（Task 1）
+  - **Day 4 - 7**：学习完成教程 book 1 & 2（Task 2）
+  - **Day 8 - 9**：自行设计创作结课作品
+  - **Day 10**：结课展示 & code review
+
+- **分数**
+
+  - | 任务                       | 分数占比（总计 100%） |
+    | -------------------------- | --------------------- |
+    | **Task 0**                 | 10%                   |
+    | **Task 1**                 | 30%                   |
+    | **Task 2**                 | 40%                   |
+    | **结课作品 & code review** | 20%                   |
+
+### ACM 班
+
+- **日程**
+
+  - **Day 1**：介绍项目与前期准备（Task 0）
+  - **Day 2**：熟悉 Rust 语法（Task 1）
+  - **Day 3 - 5**：学习完成教程 book 1 & 2（Task 2）
+  - **Day 6 - 7**：完成 book 3 优化内容（Task 3）
+  - **Day 10**：进阶内容介绍
+  - **Day 11 - 19**：完成自主学习（Task 4）
+  - **Day 20**：结课展示 & code review
+
+- **分数**
+
+  - | 任务       | 分数占比（总计 100%） |
+    | ---------- | --------------------- |
+    | **Task 0** | 5%                    |
+    | **Task 1** | 15%                   |
+    | **Task 2** | 20%                   |
+    | **Task 3** | 10%                   |
+    | **Task 4** | 50%                   |
+
+---
 
 ## 导言
 
-本项目主要工作为使用 Rust 语言实现一个基于路径追踪算法的光线追踪图像渲染器。以这个形式，你能通过学习一门新的（而且漂亮的）语言—— Rust 来加深对编程语言设计、编译原理的理解，同时又能趣味性地了解 Computer Graphics 的基础工作。项目设有作品互评环节。使用自己手写的渲染器，发挥艺术才能，创造出惊艳全场的超现实大作吧！
+> Powered by Pseudo Photograph Company of ACM
+> ACM 伪摄影公司，简称 PPCA，于 2021 年成立😉
 
-本项目为 2021-2022 学年暑期小学期课程，ACM 班时间为学期第 3 - 6 周（7.4 - 7.29），工科为第 3 - 4 周。项目助教：[PaperL](https://github.com/PaperL/)、[yichuan](https://github.com/yichuan520030910320)、[Alr_ksim](https://github.com/Alr-ksim)。具体日程安排暂定如下（Day 1 = 2022.7.4）：
+　　本项目主要内容为学习 Rust 语言并实现一个光线追踪渲染器（基于路径追踪算法）。以这个形式，你能通过学习一门新的（而且漂亮的）语言—— Rust 来加深对编程语言设计、编译原理的理解，同时又能趣味性地了解 Computer Graphics 的基础工作。项目设有作品互评环节。使用自己手写的渲染器，发挥艺术才能，创造出惊艳全场的超现实大作吧！
 
-### 工科日程
+　　下文中 `something` 表示命令行指令或文件，💠 标记表示该条目为进阶内容。
 
-- **Day 1**：介绍项目与前期准备（Task 0）
-- **Day 2 - 3**：熟悉 Rust 语法（Task 1）
-- **Day 4 - 7**：学习完成教程 book 1 & 2（Task 2）
-
-- **Day 8 - 9**：自行设计创作结课作品
-- **Day 10**：结课展示 & Code Review
-
-### ACM 班日程
-
-- **Day 1**：介绍项目与前期准备（Task 0）
-- **Day 2**：熟悉 Rust 语法（Task 1）
-- **Day 3 - 5**：学习完成教程 book 1 & 2（Task 2）
-
-- **Day 6 - 7**：完成 book 3 优化内容（Task 3）
-- **Day 10**：进阶内容介绍
-
-- **Day 11 - 19**：完成自主学习（Task 4）
-- **Day 20**：ACM 班结课展示 & Code Review
-
-本文档由导言、Tasks、Advanced Features、Reference 四部分组成。下文中 💠 标记表示该条目为进阶内容，可自行选做。
-
-你可以直接点击右上角的 “Use this template” 将这个项目复制到自己的 GitHub Profile 中。接下来，你需要做一些准备工作。
+　　你可以直接点击右上角的 “Use this template” 将这个项目复制到自己的 GitHub Profile 中。接下来，你需要做一些准备工作。
 
 ---
 
@@ -70,11 +97,13 @@
 - Rust 的面向对象特性（trait，对应 C++ 的类）可以在 10.2 中找到
 - 💠涉及到多线程渲染时，你可以阅读第 15、16 章的内容
 
-为了快速上手语法，请完成一下[力扣（LeetCode）网站](https://leetcode.cn/)习题：
+为了快速上手语法，请使用 Rust 语言完成以下[力扣（LeetCode）网站](https://leetcode.cn/)练习：
 
 - [ ] [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/)
 - [ ] [2181. 合并零之间的节点](https://leetcode.cn/problems/merge-nodes-in-between-zeros/)
 - [ ] [94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/)
+- [ ] code review
+  - Rust 基础语法特性掌握（范围不超出前 6 章与第 10.2 节）
 
 ## Task 2: Shoot the Light
 
@@ -82,8 +111,8 @@
 
 - [ ] 学习 Ray Tracing book 1，使用 Rust 语言实现该部分程序，并渲染成果图
 - [ ] 完成 Ray Tracing book 2，要求同上
+- [ ] 💠实现多线程渲染
 - [ ] code review
-  - Rust 基础语法特性掌握（不会超出 Task1 要求的基础内容章节）
   - book 1 & 2 最终成果图
   - book 1 & 2 相关实现细节
 
@@ -135,6 +164,14 @@
 
 * **Lint and Test** 会运行所有单元测试，并检查代码风格。
 * **Build and Upload** 会运行优化后的程序，并将 output 目录下生成的文件传到 build artifacts 中。
+
+## Advanced Features
+
+本题面提供一些进阶内容的指导，主要为 Rust 语言特性相关。
+
+// todo
+
+---
 
 ## Reference
 
