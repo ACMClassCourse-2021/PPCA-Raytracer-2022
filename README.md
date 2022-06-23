@@ -61,13 +61,14 @@
 ## 导言
 
 > Powered by Pseudo Photograph Company of ACM
+>
 > ACM 伪摄影公司，简称 PPCA，于 2021 年成立😉
 
 　　本项目主要内容为学习 Rust 语言并实现一个光线追踪渲染器（基于路径追踪算法）。以这个形式，你能通过学习一门新的（而且漂亮的）语言—— Rust 来加深对编程语言设计、编译原理的理解，同时又能趣味性地了解 Computer Graphics 的基础工作。项目设有作品互评环节。使用自己手写的渲染器，发挥艺术才能，创造出惊艳全场的超现实大作吧！
 
 　　下文中 `something` 表示命令行指令或文件，💠 标记表示该条目为进阶内容。
 
-　　你可以直接点击右上角的 “Use this template” 将这个项目复制到自己的 GitHub Profile 中。接下来，你需要做一些准备工作。
+　　你可以直接点击网页右上角的 “Use this template” 绿色按钮将这个项目复制到自己的 GitHub Profile 中。接下来，你需要做一些准备工作。
 
 ---
 
@@ -76,17 +77,19 @@
 - [ ] 在 `raytracer/Cargo.toml` 中，修改作者信息
 - [ ] 在 `LICENSE` 中，将作者修改为自己。你也可以换成其他许可证
 - [ ] 配置 Rust 环境
-  - 使用 [rustup 安装 Rust](https://doc.rust-lang.org/book/ch01-01-installation.html)。如果下载速度很慢，可以考虑使用 [SJTUG Mirror](https://mirrors.sjtug.sjtu.edu.cn) 的 rust-static 和 crates.io 镜像
+  - 使用 [rustup](https://doc.rust-lang.org/book/ch01-01-installation.html) 安装 Rust。如果下载速度很慢，可以考虑使用 [SJTUG Mirror](https://mirrors.sjtug.sjtu.edu.cn) 的 rust-static 和 crates.io 镜像
   - 之后，你需要安装一些工具。首先，你需要定位到项目目录。而后，运行 `rustup component add clippy rustfmt`
   - 接着，运行 `make ci`。如果程序可以正常运行，那么环境就已经配置成功了
-
 - [ ] 配置 GitHub Action
   - 如果你的 Repo 直接使用题面模板
     - 那么在上述操作完成后，将库 push 到 GitHub 上。在 GitHub Action 中，“Lint and Test” 和 “Build and Upload” 都应当通过（该功能位于 Github Repo 网页上方项目名称旁的 Actions 选项卡）
     - 程序生成的结果会出现在 GitHub Action 的 Artifacts 中。`output` 文件夹下的内容应当是程序运行时生成的。对 output 文件夹的修改不应该被同步到 GitHub 上（参考 `.gitignore`）
   - 💠你也可以自己学习设计工作流程（可以参考题面 Repo `.github/workflows/cargo.yml`）
-
 - [ ] 最后，你可以把 `README.md` 中的教程部分删除，换成自己项目的描述、运行方法等信息
+- [ ] code review
+  - 运行题面 Demo 代码或 Hello World
+  - GitHub Action 成功完成工作流程
+  - 每位学生提交 GitHub Repo 链接
 
 ## Task 1: Learn about Rust
 
@@ -126,19 +129,21 @@
   - 理解蒙特卡洛算法及相关概念
   - 💠尝试找出教程中的问题（错误），并在自己代码中加以解决或改进
 
-## Task 4: Out of Light💠
+## 💠Task 4: Out of Light
 
-通过 *Ray Tracing in One Weekend* 教程的学习，你已经基本掌握了路径追踪算法。正如 book 3 书名 *The Rest of Your Life*，光线追踪和 CG 是一片无垠的知识领域，投入一生的时间或许也无法学尽。本项目剩余的时间便交由你来自由探索，有几个大致方向可以选择：
+通过 *Ray Tracing in One Weekend* 教程的学习，你已经基本掌握了路径追踪算法。正如 book 3 书名 *The Rest of Your Life*，光线追踪和 CG 是一片无垠的知识领域，投入一生的时间或许也无法学尽。本项目剩余的时间便交由你来自由探索，有几个大致方向可以选择（子条目为示例）：
 
-- 更抽象的语言特性
+- [ ] 更抽象的语言特性
+  
   - 多线程
   - 静态 BVHNode
-- 更炫酷的视觉效果
-
-- 更高效的渲染算法
+- [ ] 更炫酷的视觉效果
+  - 镜头光晕
+- [ ] 更高效的渲染算法
   - 光子贴图
   - Unity Shader
-- 更真实的 CG 模型
+- [ ] 更真实的 CG 模型
+  
   - 色彩空间
 
 最终成果形式不限，可以是一张图、一份实验报告或一场展示。请与助教交流你想学习的知识，我们会尽可能地给予支持。
