@@ -191,7 +191,7 @@
   * 最后的展现形式可以是多样的：比如criterion集成好的html展示,或者是额外的一些图形包 比如:gnuplot。当然你还可以去尝试火焰图（之后可能在你们的操作系统课上会遇到）等工具来看具体调用函数的情况来更深入的了解性能提升的原因。
   * [参考资料1](https://bheisler.github.io/criterion.rs/book/ ) [参考资料2](https://bheisler.github.io/criterion.rs/book/getting_started.html)
 
-* **Track 7: Support for obj** 支持载入obj文件并渲染。完成这一部分你可能需要：
+* **Track 8: Support for obj** 支持载入obj文件并渲染。完成这一部分你可能需要：
 
   * 了解obj文件格式
   * 实现一个obj_loader
