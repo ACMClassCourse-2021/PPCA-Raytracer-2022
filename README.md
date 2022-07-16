@@ -17,6 +17,13 @@
 
 ### 工科
 
+- **工科小朋友的作品已经新鲜出炉啦 ~~~**
+![work1](/sences/work1.jpg)
+![work2](/sences/work2.jpg)
+![work3](/sences/work3.jpg)
+![work4](/sences/work4.jpg)
+![work5](/sences/work5.png)
+
 - **日程**
 
   - **Day 1**：介绍项目与前期准备（Task 0）
