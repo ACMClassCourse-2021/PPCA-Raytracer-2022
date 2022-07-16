@@ -17,7 +17,7 @@
 
 ### 工科
 
-- **工科小朋友的作品已经新鲜出炉啦 ~~~**
+- **工科小朋友的作品已经新鲜出炉啦！！**
 ![work1](/sences/work1.jpg)
 ![work2](/sences/work2.jpg)
 ![work3](/sences/work3.jpg)
