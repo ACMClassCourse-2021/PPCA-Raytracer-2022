@@ -7,6 +7,44 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/ACMClassCourse-2021/PPCA-Raytracer-2022)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ACMClassCourse-2021/PPCA-Raytracer-2022/CI)
 
+## 结课展示
+
+> 以下为本项目结课成果展示。**以图像资料为主，为不完全整理**
+
+### ACM 结课作品
+
+![acm_1](/final_works/acm_1.jpg)
+![acm_2](/final_works/acm_2.jpg)
+![acm_3](/final_works/acm_3.jpg)
+![acm_4](/final_works/acm_4.jpg)
+![acm_5](/final_works/acm_5.png)
+
+
+### 工科结课作品
+
+- **工科小朋友的作品已经新鲜出炉啦！！**
+![work1](/final_works/work1.jpg)
+![work2](/final_works/work2.jpg)
+![work3](/final_works/work3.jpg)
+![work4](/final_works/work4.jpg)
+![work5](/final_works/work5.png)
+
+### ACM 其他成果
+
+- 边缘检测
+
+![边缘检测](/final_works/other_1.jpg)
+
+- 法线贴图
+
+![法线贴图](https://github.com/hnyls2002/Ray-Tracing-in-One-Weekend/blob/master/output/works/SJTU_cubiod_scene.jpg?raw=true)
+
+- 低清模型优化效果对比
+
+![无优化效果](/final_works/other_2.jpg)
+
+![优化效果](https://github.com/hnyls2002/Ray-Tracing-in-One-Weekend/blob/master/output/works/patrick.jpg?raw=true)
+
 ## 课程介绍
 
 - 本项目为 2021-2022 学年暑期小学期课程
@@ -14,15 +52,6 @@
 - 项目助教：[PaperL](https://github.com/PaperL/)、[yichuan](https://github.com/yichuan520030910320)、[Alr_ksim](https://github.com/Alr-ksim)
 
 具体安排暂定如下（Day 1 = July 4th, 2022）：
-
-### 工科
-
-- **工科小朋友的作品已经新鲜出炉啦！！**
-![work1](/sences/work1.jpg)
-![work2](/sences/work2.jpg)
-![work3](/sences/work3.jpg)
-![work4](/sences/work4.jpg)
-![work5](/sences/work5.png)
 
 - **日程**
 
