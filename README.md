@@ -17,12 +17,13 @@
 ![acm_2](/final_works/acm_2.jpg)
 ![acm_3](/final_works/acm_3.jpg)
 ![acm_4](/final_works/acm_4.jpg)
-![acm_5](/final_works/acm_5.png)
+![acm_5](/final_works/acm_5.jpg)
 
 
 ### 工科结课作品
 
 - **工科小朋友的作品已经新鲜出炉啦！！**
+
 ![work1](/final_works/work1.jpg)
 ![work2](/final_works/work2.jpg)
 ![work3](/final_works/work3.jpg)
@@ -44,6 +45,12 @@
 ![无优化效果](/final_works/other_2.jpg)
 
 ![优化效果](https://github.com/hnyls2002/Ray-Tracing-in-One-Weekend/blob/master/output/works/patrick.jpg?raw=true)
+
+- 其他自主学习内容
+  - 《Unity Shader 入门精要》冯乐乐，人民邮电出版社
+  - Benchmark powered by [criterion](https://github.com/bheisler/criterion.rs)
+  - CUDA 学习
+
 
 ## 课程介绍
 
